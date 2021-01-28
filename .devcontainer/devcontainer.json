@@ -1,0 +1,61 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.140.1/containers/alpine
+{
+	"name": "snapi3-dev",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "VARIANT": "20.04" }
+	},
+	
+	// Set *default* container specific settings.json values on container create. 
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	// Note that some extensions may not work in Alpine Linux. See https://aka.ms/vscode-remote/linux.
+  "extensions": [
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "deerawan.vscode-dash",
+    "alphabotsec.vscode-eclipse-keybindings",
+    "golang.go",
+    "solarliner.linux-themes",
+    "pkief.material-icon-theme",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vsonline.vsonline",
+    "formulahendry.code-runner",
+    "brpaz.devhints",
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "neverik.go-critic",
+    "aleksandra.go-group-imports",
+    "766b.go-outliner",
+    "zsh.go-snippets",
+    "premparihar.gotestexplorer",
+    "trixnz.go-to-method",
+    "yokoe.vscode-postfix-go",
+    "yzhang.markdown-all-in-one",
+    "goessner.mdmath",
+    "davidanson.vscode-markdownlint",
+    "slevesque.vscode-multiclip",
+    "redlin.remove-tabs-on-save",
+    "tabnine.tabnine-vscode",
+    "takumii.tabspace",
+    "visualstudioexptteam.vscodeintellicode",
+    "redhat.vscode-yaml",
+    "shd101wyy.markdown-preview-enhanced"
+  ]
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}
